@@ -1,0 +1,1457 @@
+// app global css in Sass form
+
+@font-face 
+  font-family: Prompt-Regular
+  src: url('../statics/fonts/Prompt-Regular.ttf')
+
+@font-face 
+  font-family: Prompt-Bold
+  src: url('../statics/fonts/Prompt-Bold.ttf')
+
+@font-face 
+  font-family: Timer
+  src: url('../statics/fonts/alarm-clock.ttf')
+
+html
+  scroll-behavior: smooth;
+
+body
+  font-family: Prompt-Regular
+  height: 100vh
+  background-image: url(../assets/background.jpg)
+  background-size: cover
+  background-repeat: no-repeat
+  background-attachment: fixed
+  background-position: center
+
+::-webkit-scrollbar
+  width: 15px
+
+::-webkit-scrollbar-track 
+  background-color: #fce0c7
+  border: 4px solid #fff0e2
+  border-radius: 10px
+
+::-webkit-scrollbar-thumb 
+  background-color: #f59085
+  border: 2px solid #fff0e2
+  border-radius: 10px
+
+::-webkit-scrollbar-thumb:hover 
+  background-color: #f88477
+
+.maindiv 
+  width: 95%
+  max-width: 1200px
+
+.maincontent
+  height: calc(100vh - 170px)
+  margin-left: 20px
+  margin-right: 20px
+  margin-top: -10px
+  padding-top: 5px
+  background-color: #fff0e2
+  overflow-y: auto
+
+.header-fix-scrollbar
+  position: sticky
+  top: 0
+  z-index: 100
+  background-color: #fff0e2
+
+.footer-fix-scrollbar
+  position: sticky
+  bottom: 0
+  z-index: 100
+  background-color: #fff0e2
+
+/* width */
+.maincontent::-webkit-scrollbar 
+  width: 15px
+
+
+/* Track */
+.maincontent::-webkit-scrollbar-track 
+  background: #fce0c7
+  border: 3px solid #fff0e2
+
+
+/* Handle */
+.maincontent::-webkit-scrollbar-thumb 
+  background: #f59085
+  border-radius: 5px
+
+
+/* Handle on hover */
+.maincontent::-webkit-scrollbar-thumb:hover 
+  background: #1F6E73
+
+.borders-ra
+  border-radius: 10px
+
+.borders-rt
+  border-top-left-radius: 10px
+  border-top-right-radius: 10px
+
+.borders-rtl
+  border-top-left-radius: 10px
+
+.borders-rtr
+  border-top-right-radius: 10px  
+
+.borders-rb
+  border-bottom-left-radius: 10px
+  border-bottom-right-radius: 10px
+
+.borders-rbl
+  border-bottom-left-radius: 10px
+
+.borders-rbr
+  border-bottom-right-radius: 10px
+
+// NOTE border1
+.borders1-xs
+  border: 1px solid #353535
+
+.borders1-sm
+  border: 2px solid #353535
+
+.borders1-md
+  border: 3px solid #353535
+
+.borders1-lg
+  border: 4px solid #353535
+
+.borders1-xl
+  border: 5px solid #353535
+
+.borders1-lr-xs
+  border-left: 1px solid #353535
+  border-right: 1px solid #353535
+
+.borders1-l-xs
+  border-left: 1px solid #353535
+
+.borders1-r-xs
+  border-right: 1px solid #353535
+
+.borders1-tb-xs
+  border-top: 1px solid #353535
+  border-bottom: 1px solid #353535
+
+.borders1-t-xs
+  border-top: 1px solid #353535
+
+.borders1-b-xs
+  border-bottom: 1px solid #353535  
+
+.borders1-lr-sm
+  border-left: 2px solid #353535
+  border-right: 2px solid #353535
+
+.borders1-l-sm
+  border-left: 2px solid #353535
+
+.borders1-r-sm
+  border-right: 2px solid #353535
+
+.borders1-tb-sm
+  border-top: 2px solid #353535
+  border-bottom: 2px solid #353535
+
+.borders1-t-sm
+  border-top: 2px solid #353535
+
+.borders1-b-sm
+  border-bottom: 2px solid #353535  
+
+.borders1-lr-md
+  border-left: 3px solid #353535
+  border-right: 3px solid #353535
+
+.borders1-l-md
+  border-left: 3px solid #353535
+
+.borders1-r-md
+  border-right: 3px solid #353535
+
+.borders1-tb-md
+  border-top: 3px solid #353535
+  border-bottom: 3px solid #353535
+
+.borders1-t-md
+  border-top: 3px solid #353535
+
+.borders1-b-md
+  border-bottom: 3px solid #353535  
+
+.borders1-lr-lg
+  border-left: 4px solid #353535
+  border-right: 4px solid #353535
+
+.borders1-l-lg
+  border-left: 4px solid #353535
+
+.borders1-r-lg
+  border-right: 4px solid #353535
+
+.borders1-tb-lg
+  border-top: 4px solid #353535
+  border-bottom: 4px solid #353535
+
+.borders1-t-lg
+  border-top: 4px solid #353535
+
+.borders1-b-lg
+  border-bottom: 4px solid #353535  
+
+.borders1-lr-xl
+  border-left: 5px solid #353535
+  border-right: 5px solid #353535
+
+.borders1-l-xl
+  border-left: 5px solid #353535
+
+.borders1-r-xl
+  border-right: 5px solid #353535
+
+.borders1-tb-xl
+  border-top: 5px solid #353535
+  border-bottom: 5px solid #353535
+
+.borders1-t-xl
+  border-top: 5px solid #353535
+
+.borders1-b-xl
+  border-bottom: 5px solid #353535  
+
+
+// NOTE border2
+.borders2-xs
+  border: 1px solid #ffffff
+
+.borders2-sm
+  border: 2px solid #ffffff
+
+.borders2-md
+  border: 3px solid #ffffff
+
+.borders2-lg
+  border: 4px solid #ffffff
+
+.borders2-xl
+  border: 5px solid #ffffff
+
+.borders2-lr-xs
+  border-left: 1px solid #ffffff
+  border-right: 1px solid #ffffff
+
+.borders2-l-xs
+  border-left: 1px solid #ffffff
+
+.borders2-r-xs
+  border-right: 1px solid #ffffff
+
+.borders2-tb-xs
+  border-top: 1px solid #ffffff
+  border-bottom: 1px solid #ffffff
+
+.borders2-t-xs
+  border-top: 1px solid #ffffff
+
+.borders2-b-xs
+  border-bottom: 1px solid #ffffff  
+
+.borders2-lr-sm
+  border-left: 2px solid #ffffff
+  border-right: 2px solid #ffffff
+
+.borders2-l-sm
+  border-left: 2px solid #ffffff
+
+.borders2-r-sm
+  border-right: 2px solid #ffffff
+
+.borders2-tb-sm
+  border-top: 2px solid #ffffff
+  border-bottom: 2px solid #ffffff
+
+.borders2-t-sm
+  border-top: 2px solid #ffffff
+
+.borders2-b-sm
+  border-bottom: 2px solid #ffffff  
+
+.borders2-lr-md
+  border-left: 3px solid #ffffff
+  border-right: 3px solid #ffffff
+
+.borders2-l-md
+  border-left: 3px solid #ffffff
+
+.borders2-r-md
+  border-right: 3px solid #ffffff
+
+.borders2-tb-md
+  border-top: 3px solid #ffffff
+  border-bottom: 3px solid #ffffff
+
+.borders2-t-md
+  border-top: 3px solid #ffffff
+
+.borders2-b-md
+  border-bottom: 3px solid #ffffff  
+
+.borders2-lr-lg
+  border-left: 4px solid #ffffff
+  border-right: 4px solid #ffffff
+
+.borders2-l-lg
+  border-left: 4px solid #ffffff
+
+.borders2-r-lg
+  border-right: 4px solid #ffffff
+
+.borders2-tb-lg
+  border-top: 4px solid #ffffff
+  border-bottom: 4px solid #ffffff
+
+.borders2-t-lg
+  border-top: 4px solid #ffffff
+
+.borders2-b-lg
+  border-bottom: 4px solid #ffffff  
+
+.borders2-lr-xl
+  border-left: 5px solid #ffffff
+  border-right: 5px solid #ffffff
+
+.borders2-l-xl
+  border-left: 5px solid #ffffff
+
+.borders2-r-xl
+  border-right: 5px solid #ffffff
+
+.borders2-tb-xl
+  border-top: 5px solid #ffffff
+  border-bottom: 5px solid #ffffff
+
+.borders2-t-xl
+  border-top: 5px solid #ffffff
+
+.borders2-b-xl
+  border-bottom: 5px solid #ffffff  
+
+
+// NOTE border3
+.borders3-xs
+  border: 1px solid #a0a4a8
+
+.borders3-sm
+  border: 2px solid #a0a4a8
+
+.borders3-md
+  border: 3px solid #a0a4a8
+
+.borders3-lg
+  border: 4px solid #a0a4a8
+
+.borders3-xl
+  border: 5px solid #a0a4a8
+
+.borders3-lr-xs
+  border-left: 1px solid #a0a4a8
+  border-right: 1px solid #a0a4a8
+
+.borders3-l-xs
+  border-left: 1px solid #a0a4a8
+
+.borders3-r-xs
+  border-right: 1px solid #a0a4a8
+
+.borders3-tb-xs
+  border-top: 1px solid #a0a4a8
+  border-bottom: 1px solid #a0a4a8
+
+.borders3-t-xs
+  border-top: 1px solid #a0a4a8
+
+.borders3-b-xs
+  border-bottom: 1px solid #a0a4a8  
+
+.borders3-lr-sm
+  border-left: 2px solid #a0a4a8
+  border-right: 2px solid #a0a4a8
+
+.borders3-l-sm
+  border-left: 2px solid #a0a4a8
+
+.borders3-r-sm
+  border-right: 2px solid #a0a4a8
+
+.borders3-tb-sm
+  border-top: 2px solid #a0a4a8
+  border-bottom: 2px solid #a0a4a8
+
+.borders3-t-sm
+  border-top: 2px solid #a0a4a8
+
+.borders3-b-sm
+  border-bottom: 2px solid #a0a4a8  
+
+.borders3-lr-md
+  border-left: 3px solid #a0a4a8
+  border-right: 3px solid #a0a4a8
+
+.borders3-l-md
+  border-left: 3px solid #a0a4a8
+
+.borders3-r-md
+  border-right: 3px solid #a0a4a8
+
+.borders3-tb-md
+  border-top: 3px solid #a0a4a8
+  border-bottom: 3px solid #a0a4a8
+
+.borders3-t-md
+  border-top: 3px solid #a0a4a8
+
+.borders3-b-md
+  border-bottom: 3px solid #a0a4a8  
+
+.borders3-lr-lg
+  border-left: 4px solid #a0a4a8
+  border-right: 4px solid #a0a4a8
+
+.borders3-l-lg
+  border-left: 4px solid #a0a4a8
+
+.borders3-r-lg
+  border-right: 4px solid #a0a4a8
+
+.borders3-tb-lg
+  border-top: 4px solid #a0a4a8
+  border-bottom: 4px solid #a0a4a8
+
+.borders3-t-lg
+  border-top: 4px solid #a0a4a8
+
+.borders3-b-lg
+  border-bottom: 4px solid #a0a4a8  
+
+.borders3-lr-xl
+  border-left: 5px solid #a0a4a8
+  border-right: 5px solid #a0a4a8
+
+.borders3-l-xl
+  border-left: 5px solid #a0a4a8
+
+.borders3-r-xl
+  border-right: 5px solid #a0a4a8
+
+.borders3-tb-xl
+  border-top: 5px solid #a0a4a8
+  border-bottom: 5px solid #a0a4a8
+
+.borders3-t-xl
+  border-top: 5px solid #a0a4a8
+
+.borders3-b-xl
+  border-bottom: 5px solid #a0a4a8  
+
+// NOTE border4
+.borders4-xs
+  border: 1px solid #0d5d76
+
+.borders4-sm
+  border: 2px solid #0d5d76
+
+.borders4-md
+  border: 3px solid #0d5d76
+
+.borders4-lg
+  border: 4px solid #0d5d76
+
+.borders4-xl
+  border: 5px solid #0d5d76
+
+.borders4-lr-xs
+  border-left: 1px solid #0d5d76
+  border-right: 1px solid #0d5d76
+
+.borders4-l-xs
+  border-left: 1px solid #0d5d76
+
+.borders4-r-xs
+  border-right: 1px solid #0d5d76
+
+.borders4-tb-xs
+  border-top: 1px solid #0d5d76
+  border-bottom: 1px solid #0d5d76
+
+.borders4-t-xs
+  border-top: 1px solid #0d5d76
+
+.borders4-b-xs
+  border-bottom: 1px solid #0d5d76  
+
+.borders4-lr-sm
+  border-left: 2px solid #0d5d76
+  border-right: 2px solid #0d5d76
+
+.borders4-l-sm
+  border-left: 2px solid #0d5d76
+
+.borders4-r-sm
+  border-right: 2px solid #0d5d76
+
+.borders4-tb-sm
+  border-top: 2px solid #0d5d76
+  border-bottom: 2px solid #0d5d76
+
+.borders4-t-sm
+  border-top: 2px solid #0d5d76
+
+.borders4-b-sm
+  border-bottom: 2px solid #0d5d76  
+
+.borders4-lr-md
+  border-left: 3px solid #0d5d76
+  border-right: 3px solid #0d5d76
+
+.borders4-l-md
+  border-left: 3px solid #0d5d76
+
+.borders4-r-md
+  border-right: 3px solid #0d5d76
+
+.borders4-tb-md
+  border-top: 3px solid #0d5d76
+  border-bottom: 3px solid #0d5d76
+
+.borders4-t-md
+  border-top: 3px solid #0d5d76
+
+.borders4-b-md
+  border-bottom: 3px solid #0d5d76  
+
+.borders4-lr-lg
+  border-left: 4px solid #0d5d76
+  border-right: 4px solid #0d5d76
+
+.borders4-l-lg
+  border-left: 4px solid #0d5d76
+
+.borders4-r-lg
+  border-right: 4px solid #0d5d76
+
+.borders4-tb-lg
+  border-top: 4px solid #0d5d76
+  border-bottom: 4px solid #0d5d76
+
+.borders4-t-lg
+  border-top: 4px solid #0d5d76
+
+.borders4-b-lg
+  border-bottom: 4px solid #0d5d76  
+
+.borders4-lr-xl
+  border-left: 5px solid #0d5d76
+  border-right: 5px solid #0d5d76
+
+.borders4-l-xl
+  border-left: 5px solid #0d5d76
+
+.borders4-r-xl
+  border-right: 5px solid #0d5d76
+
+.borders4-tb-xl
+  border-top: 5px solid #0d5d76
+  border-bottom: 5px solid #0d5d76
+
+.borders4-t-xl
+  border-top: 5px solid #0d5d76
+
+.borders4-b-xl
+  border-bottom: 5px solid #0d5d76  
+
+// NOTE border5
+.borders5-xs
+  border: 1px solid #0a9e9c
+
+.borders5-sm
+  border: 2px solid #0a9e9c
+
+.borders5-md
+  border: 3px solid #0a9e9c
+
+.borders5-lg
+  border: 4px solid #0a9e9c
+
+.borders5-xl
+  border: 5px solid #0a9e9c
+
+.borders5-lr-xs
+  border-left: 1px solid #0a9e9c
+  border-right: 1px solid #0a9e9c
+
+.borders5-l-xs
+  border-left: 1px solid #0a9e9c
+
+.borders5-r-xs
+  border-right: 1px solid #0a9e9c
+
+.borders5-tb-xs
+  border-top: 1px solid #0a9e9c
+  border-bottom: 1px solid #0a9e9c
+
+.borders5-t-xs
+  border-top: 1px solid #0a9e9c
+
+.borders5-b-xs
+  border-bottom: 1px solid #0a9e9c  
+
+.borders5-lr-sm
+  border-left: 2px solid #0a9e9c
+  border-right: 2px solid #0a9e9c
+
+.borders5-l-sm
+  border-left: 2px solid #0a9e9c
+
+.borders5-r-sm
+  border-right: 2px solid #0a9e9c
+
+.borders5-tb-sm
+  border-top: 2px solid #0a9e9c
+  border-bottom: 2px solid #0a9e9c
+
+.borders5-t-sm
+  border-top: 2px solid #0a9e9c
+
+.borders5-b-sm
+  border-bottom: 2px solid #0a9e9c  
+
+.borders5-lr-md
+  border-left: 3px solid #0a9e9c
+  border-right: 3px solid #0a9e9c
+
+.borders5-l-md
+  border-left: 3px solid #0a9e9c
+
+.borders5-r-md
+  border-right: 3px solid #0a9e9c
+
+.borders5-tb-md
+  border-top: 3px solid #0a9e9c
+  border-bottom: 3px solid #0a9e9c
+
+.borders5-t-md
+  border-top: 3px solid #0a9e9c
+
+.borders5-b-md
+  border-bottom: 3px solid #0a9e9c  
+
+.borders5-lr-lg
+  border-left: 4px solid #0a9e9c
+  border-right: 4px solid #0a9e9c
+
+.borders5-l-lg
+  border-left: 4px solid #0a9e9c
+
+.borders5-r-lg
+  border-right: 4px solid #0a9e9c
+
+.borders5-tb-lg
+  border-top: 4px solid #0a9e9c
+  border-bottom: 4px solid #0a9e9c
+
+.borders5-t-lg
+  border-top: 4px solid #0a9e9c
+
+.borders5-b-lg
+  border-bottom: 4px solid #0a9e9c  
+
+.borders5-lr-xl
+  border-left: 5px solid #0a9e9c
+  border-right: 5px solid #0a9e9c
+
+.borders5-l-xl
+  border-left: 5px solid #0a9e9c
+
+.borders5-r-xl
+  border-right: 5px solid #0a9e9c
+
+.borders5-tb-xl
+  border-top: 5px solid #0a9e9c
+  border-bottom: 5px solid #0a9e9c
+
+.borders5-t-xl
+  border-top: 5px solid #0a9e9c
+
+.borders5-b-xl
+  border-bottom: 5px solid #0a9e9c  
+
+// NOTE border6
+.borders6-xs
+  border: 1px solid #67c7c6
+
+.borders6-sm
+  border: 2px solid #67c7c6
+
+.borders6-md
+  border: 3px solid #67c7c6
+
+.borders6-lg
+  border: 4px solid #67c7c6
+
+.borders6-xl
+  border: 5px solid #67c7c6
+
+.borders6-lr-xs
+  border-left: 1px solid #67c7c6
+  border-right: 1px solid #67c7c6
+
+.borders6-l-xs
+  border-left: 1px solid #67c7c6
+
+.borders6-r-xs
+  border-right: 1px solid #67c7c6
+
+.borders6-tb-xs
+  border-top: 1px solid #67c7c6
+  border-bottom: 1px solid #67c7c6
+
+.borders6-t-xs
+  border-top: 1px solid #67c7c6
+
+.borders6-b-xs
+  border-bottom: 1px solid #67c7c6  
+
+.borders6-lr-sm
+  border-left: 2px solid #67c7c6
+  border-right: 2px solid #67c7c6
+
+.borders6-l-sm
+  border-left: 2px solid #67c7c6
+
+.borders6-r-sm
+  border-right: 2px solid #67c7c6
+
+.borders6-tb-sm
+  border-top: 2px solid #67c7c6
+  border-bottom: 2px solid #67c7c6
+
+.borders6-t-sm
+  border-top: 2px solid #67c7c6
+
+.borders6-b-sm
+  border-bottom: 2px solid #67c7c6  
+
+.borders6-lr-md
+  border-left: 3px solid #67c7c6
+  border-right: 3px solid #67c7c6
+
+.borders6-l-md
+  border-left: 3px solid #67c7c6
+
+.borders6-r-md
+  border-right: 3px solid #67c7c6
+
+.borders6-tb-md
+  border-top: 3px solid #67c7c6
+  border-bottom: 3px solid #67c7c6
+
+.borders6-t-md
+  border-top: 3px solid #67c7c6
+
+.borders6-b-md
+  border-bottom: 3px solid #67c7c6  
+
+.borders6-lr-lg
+  border-left: 4px solid #67c7c6
+  border-right: 4px solid #67c7c6
+
+.borders6-l-lg
+  border-left: 4px solid #67c7c6
+
+.borders6-r-lg
+  border-right: 4px solid #67c7c6
+
+.borders6-tb-lg
+  border-top: 4px solid #67c7c6
+  border-bottom: 4px solid #67c7c6
+
+.borders6-t-lg
+  border-top: 4px solid #67c7c6
+
+.borders6-b-lg
+  border-bottom: 4px solid #67c7c6  
+
+.borders6-lr-xl
+  border-left: 5px solid #67c7c6
+  border-right: 5px solid #67c7c6
+
+.borders6-l-xl
+  border-left: 5px solid #67c7c6
+
+.borders6-r-xl
+  border-right: 5px solid #67c7c6
+
+.borders6-tb-xl
+  border-top: 5px solid #67c7c6
+  border-bottom: 5px solid #67c7c6
+
+.borders6-t-xl
+  border-top: 5px solid #67c7c6
+
+.borders6-b-xl
+  border-bottom: 5px solid #67c7c6  
+
+// NOTE border7
+.borders7-xs
+  border: 1px solid #efb71c
+
+.borders7-sm
+  border: 2px solid #efb71c
+
+.borders7-md
+  border: 3px solid #efb71c
+
+.borders7-lg
+  border: 4px solid #efb71c
+
+.borders7-xl
+  border: 5px solid #efb71c
+
+.borders7-lr-xs
+  border-left: 1px solid #efb71c
+  border-right: 1px solid #efb71c
+
+.borders7-l-xs
+  border-left: 1px solid #efb71c
+
+.borders7-r-xs
+  border-right: 1px solid #efb71c
+
+.borders7-tb-xs
+  border-top: 1px solid #efb71c
+  border-bottom: 1px solid #efb71c
+
+.borders7-t-xs
+  border-top: 1px solid #efb71c
+
+.borders7-b-xs
+  border-bottom: 1px solid #efb71c  
+
+.borders7-lr-sm
+  border-left: 2px solid #efb71c
+  border-right: 2px solid #efb71c
+
+.borders7-l-sm
+  border-left: 2px solid #efb71c
+
+.borders7-r-sm
+  border-right: 2px solid #efb71c
+
+.borders7-tb-sm
+  border-top: 2px solid #efb71c
+  border-bottom: 2px solid #efb71c
+
+.borders7-t-sm
+  border-top: 2px solid #efb71c
+
+.borders7-b-sm
+  border-bottom: 2px solid #efb71c  
+
+.borders7-lr-md
+  border-left: 3px solid #efb71c
+  border-right: 3px solid #efb71c
+
+.borders7-l-md
+  border-left: 3px solid #efb71c
+
+.borders7-r-md
+  border-right: 3px solid #efb71c
+
+.borders7-tb-md
+  border-top: 3px solid #efb71c
+  border-bottom: 3px solid #efb71c
+
+.borders7-t-md
+  border-top: 3px solid #efb71c
+
+.borders7-b-md
+  border-bottom: 3px solid #efb71c  
+
+.borders7-lr-lg
+  border-left: 4px solid #efb71c
+  border-right: 4px solid #efb71c
+
+.borders7-l-lg
+  border-left: 4px solid #efb71c
+
+.borders7-r-lg
+  border-right: 4px solid #efb71c
+
+.borders7-tb-lg
+  border-top: 4px solid #efb71c
+  border-bottom: 4px solid #efb71c
+
+.borders7-t-lg
+  border-top: 4px solid #efb71c
+
+.borders7-b-lg
+  border-bottom: 4px solid #efb71c  
+
+.borders7-lr-xl
+  border-left: 5px solid #efb71c
+  border-right: 5px solid #efb71c
+
+.borders7-l-xl
+  border-left: 5px solid #efb71c
+
+.borders7-r-xl
+  border-right: 5px solid #efb71c
+
+.borders7-tb-xl
+  border-top: 5px solid #efb71c
+  border-bottom: 5px solid #efb71c
+
+.borders7-t-xl
+  border-top: 5px solid #efb71c
+
+.borders7-b-xl
+  border-bottom: 5px solid #efb71c  
+
+// NOTE border8
+.borders8-xs
+  border: 1px solid #fff0e2
+
+.borders8-sm
+  border: 2px solid #fff0e2
+
+.borders8-md
+  border: 3px solid #fff0e2
+
+.borders8-lg
+  border: 4px solid #fff0e2
+
+.borders8-xl
+  border: 5px solid #fff0e2
+
+.borders8-lr-xs
+  border-left: 1px solid #fff0e2
+  border-right: 1px solid #fff0e2
+
+.borders8-l-xs
+  border-left: 1px solid #fff0e2
+
+.borders8-r-xs
+  border-right: 1px solid #fff0e2
+
+.borders8-tb-xs
+  border-top: 1px solid #fff0e2
+  border-bottom: 1px solid #fff0e2
+
+.borders8-t-xs
+  border-top: 1px solid #fff0e2
+
+.borders8-b-xs
+  border-bottom: 1px solid #fff0e2  
+
+.borders8-lr-sm
+  border-left: 2px solid #fff0e2
+  border-right: 2px solid #fff0e2
+
+.borders8-l-sm
+  border-left: 2px solid #fff0e2
+
+.borders8-r-sm
+  border-right: 2px solid #fff0e2
+
+.borders8-tb-sm
+  border-top: 2px solid #fff0e2
+  border-bottom: 2px solid #fff0e2
+
+.borders8-t-sm
+  border-top: 2px solid #fff0e2
+
+.borders8-b-sm
+  border-bottom: 2px solid #fff0e2  
+
+.borders8-lr-md
+  border-left: 3px solid #fff0e2
+  border-right: 3px solid #fff0e2
+
+.borders8-l-md
+  border-left: 3px solid #fff0e2
+
+.borders8-r-md
+  border-right: 3px solid #fff0e2
+
+.borders8-tb-md
+  border-top: 3px solid #fff0e2
+  border-bottom: 3px solid #fff0e2
+
+.borders8-t-md
+  border-top: 3px solid #fff0e2
+
+.borders8-b-md
+  border-bottom: 3px solid #fff0e2  
+
+.borders8-lr-lg
+  border-left: 4px solid #fff0e2
+  border-right: 4px solid #fff0e2
+
+.borders8-l-lg
+  border-left: 4px solid #fff0e2
+
+.borders8-r-lg
+  border-right: 4px solid #fff0e2
+
+.borders8-tb-lg
+  border-top: 4px solid #fff0e2
+  border-bottom: 4px solid #fff0e2
+
+.borders8-t-lg
+  border-top: 4px solid #fff0e2
+
+.borders8-b-lg
+  border-bottom: 4px solid #fff0e2  
+
+.borders8-lr-xl
+  border-left: 5px solid #fff0e2
+  border-right: 5px solid #fff0e2
+
+.borders8-l-xl
+  border-left: 5px solid #fff0e2
+
+.borders8-r-xl
+  border-right: 5px solid #fff0e2
+
+.borders8-tb-xl
+  border-top: 5px solid #fff0e2
+  border-bottom: 5px solid #fff0e2
+
+.borders8-t-xl
+  border-top: 5px solid #fff0e2
+
+.borders8-b-xl
+  border-bottom: 5px solid #fff0e2  
+
+// NOTE border9
+.borders9-xs
+  border: 1px solid #fce0c7
+
+.borders9-sm
+  border: 2px solid #fce0c7
+
+.borders9-md
+  border: 3px solid #fce0c7
+
+.borders9-lg
+  border: 4px solid #fce0c7
+
+.borders9-xl
+  border: 5px solid #fce0c7
+
+.borders9-lr-xs
+  border-left: 1px solid #fce0c7
+  border-right: 1px solid #fce0c7
+
+.borders9-l-xs
+  border-left: 1px solid #fce0c7
+
+.borders9-r-xs
+  border-right: 1px solid #fce0c7
+
+.borders9-tb-xs
+  border-top: 1px solid #fce0c7
+  border-bottom: 1px solid #fce0c7
+
+.borders9-t-xs
+  border-top: 1px solid #fce0c7
+
+.borders9-b-xs
+  border-bottom: 1px solid #fce0c7  
+
+.borders9-lr-sm
+  border-left: 2px solid #fce0c7
+  border-right: 2px solid #fce0c7
+
+.borders9-l-sm
+  border-left: 2px solid #fce0c7
+
+.borders9-r-sm
+  border-right: 2px solid #fce0c7
+
+.borders9-tb-sm
+  border-top: 2px solid #fce0c7
+  border-bottom: 2px solid #fce0c7
+
+.borders9-t-sm
+  border-top: 2px solid #fce0c7
+
+.borders9-b-sm
+  border-bottom: 2px solid #fce0c7  
+
+.borders9-lr-md
+  border-left: 3px solid #fce0c7
+  border-right: 3px solid #fce0c7
+
+.borders9-l-md
+  border-left: 3px solid #fce0c7
+
+.borders9-r-md
+  border-right: 3px solid #fce0c7
+
+.borders9-tb-md
+  border-top: 3px solid #fce0c7
+  border-bottom: 3px solid #fce0c7
+
+.borders9-t-md
+  border-top: 3px solid #fce0c7
+
+.borders9-b-md
+  border-bottom: 3px solid #fce0c7  
+
+.borders9-lr-lg
+  border-left: 4px solid #fce0c7
+  border-right: 4px solid #fce0c7
+
+.borders9-l-lg
+  border-left: 4px solid #fce0c7
+
+.borders9-r-lg
+  border-right: 4px solid #fce0c7
+
+.borders9-tb-lg
+  border-top: 4px solid #fce0c7
+  border-bottom: 4px solid #fce0c7
+
+.borders9-t-lg
+  border-top: 4px solid #fce0c7
+
+.borders9-b-lg
+  border-bottom: 4px solid #fce0c7  
+
+.borders9-lr-xl
+  border-left: 5px solid #fce0c7
+  border-right: 5px solid #fce0c7
+
+.borders9-l-xl
+  border-left: 5px solid #fce0c7
+
+.borders9-r-xl
+  border-right: 5px solid #fce0c7
+
+.borders9-tb-xl
+  border-top: 5px solid #fce0c7
+  border-bottom: 5px solid #fce0c7
+
+.borders9-t-xl
+  border-top: 5px solid #fce0c7
+
+.borders9-b-xl
+  border-bottom: 5px solid #fce0c7  
+
+// NOTE border10
+.borders10-xs
+  border: 1px solid #f59085
+
+.borders10-sm
+  border: 2px solid #f59085
+
+.borders10-md
+  border: 3px solid #f59085
+
+.borders10-lg
+  border: 4px solid #f59085
+
+.borders10-xl
+  border: 5px solid #f59085
+
+.borders10-lr-xs
+  border-left: 1px solid #f59085
+  border-right: 1px solid #f59085
+
+.borders10-l-xs
+  border-left: 1px solid #f59085
+
+.borders10-r-xs
+  border-right: 1px solid #f59085
+
+.borders10-tb-xs
+  border-top: 1px solid #f59085
+  border-bottom: 1px solid #f59085
+
+.borders10-t-xs
+  border-top: 1px solid #f59085
+
+.borders10-b-xs
+  border-bottom: 1px solid #f59085  
+
+.borders10-lr-sm
+  border-left: 2px solid #f59085
+  border-right: 2px solid #f59085
+
+.borders10-l-sm
+  border-left: 2px solid #f59085
+
+.borders10-r-sm
+  border-right: 2px solid #f59085
+
+.borders10-tb-sm
+  border-top: 2px solid #f59085
+  border-bottom: 2px solid #f59085
+
+.borders10-t-sm
+  border-top: 2px solid #f59085
+
+.borders10-b-sm
+  border-bottom: 2px solid #f59085  
+
+.borders10-lr-md
+  border-left: 3px solid #f59085
+  border-right: 3px solid #f59085
+
+.borders10-l-md
+  border-left: 3px solid #f59085
+
+.borders10-r-md
+  border-right: 3px solid #f59085
+
+.borders10-tb-md
+  border-top: 3px solid #f59085
+  border-bottom: 3px solid #f59085
+
+.borders10-t-md
+  border-top: 3px solid #f59085
+
+.borders10-b-md
+  border-bottom: 3px solid #f59085  
+
+.borders10-lr-lg
+  border-left: 4px solid #f59085
+  border-right: 4px solid #f59085
+
+.borders10-l-lg
+  border-left: 4px solid #f59085
+
+.borders10-r-lg
+  border-right: 4px solid #f59085
+
+.borders10-tb-lg
+  border-top: 4px solid #f59085
+  border-bottom: 4px solid #f59085
+
+.borders10-t-lg
+  border-top: 4px solid #f59085
+
+.borders10-b-lg
+  border-bottom: 4px solid #f59085  
+
+.borders10-lr-xl
+  border-left: 5px solid #f59085
+  border-right: 5px solid #f59085
+
+.borders10-l-xl
+  border-left: 5px solid #f59085
+
+.borders10-r-xl
+  border-right: 5px solid #f59085
+
+.borders10-tb-xl
+  border-top: 5px solid #f59085
+  border-bottom: 5px solid #f59085
+
+.borders10-t-xl
+  border-top: 5px solid #f59085
+
+.borders10-b-xl
+  border-bottom: 5px solid #f59085  
+
+// NOTE border11
+.borders11-xs
+  border: 1px solid #c74c56
+
+.borders11-sm
+  border: 2px solid #c74c56
+
+.borders11-md
+  border: 3px solid #c74c56
+
+.borders11-lg
+  border: 4px solid #c74c56
+
+.borders11-xl
+  border: 5px solid #c74c56
+
+.borders11-lr-xs
+  border-left: 1px solid #c74c56
+  border-right: 1px solid #c74c56
+
+.borders11-l-xs
+  border-left: 1px solid #c74c56
+
+.borders11-r-xs
+  border-right: 1px solid #c74c56
+
+.borders11-tb-xs
+  border-top: 1px solid #c74c56
+  border-bottom: 1px solid #c74c56
+
+.borders11-t-xs
+  border-top: 1px solid #c74c56
+
+.borders11-b-xs
+  border-bottom: 1px solid #c74c56  
+
+.borders11-lr-sm
+  border-left: 2px solid #c74c56
+  border-right: 2px solid #c74c56
+
+.borders11-l-sm
+  border-left: 2px solid #c74c56
+
+.borders11-r-sm
+  border-right: 2px solid #c74c56
+
+.borders11-tb-sm
+  border-top: 2px solid #c74c56
+  border-bottom: 2px solid #c74c56
+
+.borders11-t-sm
+  border-top: 2px solid #c74c56
+
+.borders11-b-sm
+  border-bottom: 2px solid #c74c56  
+
+.borders11-lr-md
+  border-left: 3px solid #c74c56
+  border-right: 3px solid #c74c56
+
+.borders11-l-md
+  border-left: 3px solid #c74c56
+
+.borders11-r-md
+  border-right: 3px solid #c74c56
+
+.borders11-tb-md
+  border-top: 3px solid #c74c56
+  border-bottom: 3px solid #c74c56
+
+.borders11-t-md
+  border-top: 3px solid #c74c56
+
+.borders11-b-md
+  border-bottom: 3px solid #c74c56  
+
+.borders11-lr-lg
+  border-left: 4px solid #c74c56
+  border-right: 4px solid #c74c56
+
+.borders11-l-lg
+  border-left: 4px solid #c74c56
+
+.borders11-r-lg
+  border-right: 4px solid #c74c56
+
+.borders11-tb-lg
+  border-top: 4px solid #c74c56
+  border-bottom: 4px solid #c74c56
+
+.borders11-t-lg
+  border-top: 4px solid #c74c56
+
+.borders11-b-lg
+  border-bottom: 4px solid #c74c56  
+
+.borders11-lr-xl
+  border-left: 5px solid #c74c56
+  border-right: 5px solid #c74c56
+
+.borders11-l-xl
+  border-left: 5px solid #c74c56
+
+.borders11-r-xl
+  border-right: 5px solid #c74c56
+
+.borders11-tb-xl
+  border-top: 5px solid #c74c56
+  border-bottom: 5px solid #c74c56
+
+.borders11-t-xl
+  border-top: 5px solid #c74c56
+
+.borders11-b-xl
+  border-bottom: 5px solid #c74c56  
+
+.brx 
+   border: 1px solid red
+
+.bg1 
+  background-color: #353535
+
+.bg2 
+  background-color: #ffffff
+
+.bg3 
+  background-color: #a0a4a8
+
+.bg4 
+  background-color: #0d5d76
+
+.bg5 
+  background-color: #0a9e9c
+
+.bg6 
+  background-color: #67c7c6
+
+.bg7 
+  background-color: #efb71c
+
+.bg8 
+  background-color: #fff0e2
+
+.bg9 
+  background-color: #fce0c7
+
+.bg10 
+  background-color: #f59085
+
+.bg11 
+  background-color: #c74c56
+
+.color1 
+  color: #353535
+
+.color2 
+  color: #ffffff
+
+.color3 
+  color: #a0a4a8
+
+.color4 
+  color: #0d5d76
+
+.color5 
+  color: #0a9e9c
+
+.color6 
+  color: #67c7c6
+
+.color7 
+  color: #efb71c
+
+.color8 
+  color: #fff0e2
+
+.color9 
+  color: #fce0c7
+
+.color10 
+  color: #f59085
+
+.color11 
+  color: #c74c56
